@@ -1,0 +1,49 @@
+.dark{
+    main{
+        background-color: #37383C; 
+        h1{
+            color: white;
+            span{
+                color: #50E3C2;
+            }
+        }
+        form{
+            input[type="search"]{
+                border: 1px solid white; background-color: transparent; 
+                border-right: none; color: white;
+            }
+            button{
+                border: 1px solid white; border-left: none;
+                background-color: transparent; color: white; 
+            }
+        }
+    
+        h2{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+    
+        div{
+            background-color: #222326; 
+            h2{
+                color: white;
+            }
+            p{
+                color: white;
+            }
+    
+            div[id="slider"]{
+                button{
+                    background-color: transparent;
+                    border: white 1px solid; color: white; 
+                }
+                button:hover{
+                    background-color: white; color:#222326; 
+                }
+                
+            }
+        }
+    }
+}

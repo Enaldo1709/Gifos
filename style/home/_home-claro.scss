@@ -1,0 +1,46 @@
+main{
+    h1{
+        color: #572EE5;
+        span{
+            color: #50E3C2;
+        }
+    }
+    form{
+        input[type="search"]{
+            border: 1px solid #572EE5; background-color: transparent; 
+            border-right: none; color: black;
+        }
+        button{
+            border: 1px solid #572EE5; border-left: none;
+            background-color: transparent; color: #572EE5; 
+        }
+    }
+
+    h2{
+        color: #572EE5;
+    }
+    p{
+        color: #572EE5;
+    }
+
+    div{
+        background-color: #F3F5F8; 
+        h2{
+            color: #572EE5;
+        }
+        p{
+            color: black;
+        }
+
+        div[id="slider"]{
+            button{
+                background-color: transparent;
+                border: #572EE5 1px solid; color: #572EE5; 
+            }
+            button:hover{
+                background-color: #572EE5; color:white; 
+            }
+            
+        }
+    }
+}
