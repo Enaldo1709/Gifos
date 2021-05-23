@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bienvenido a GIFOs</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
-<body>
+<body class="dark">
+    <header>
+        <a href="./index.html"><img src="./assets/logo-desktop.svg" alt="Home"></a>
+        <ul>
+            <li id="link-modo-oscuro">MODO NOCTURNO</li>
+            <li id="link-favoritos"><a href="./templates/favoritos.html">FAVORITOS</a></li>
+            <li id="link-mis-gifos"><a href="./templates/misGifos.html">MIS GIFOS</a></li>
+            <button id="crear-gifo-link-btn"><i class="fas fa-plus"></i></button>
+        </ul>
+        <button id="menu-button"><i class="fas fa-bars"></i></button>
+    </header>
+    <div id="menu" class="noVisible">
+        <ul>
+            <li id="link-modo-oscuro">Modo Nocturno</li><hr>
+            <li id="link-favoritos"><a href="./templates/favoritos.html">Favoritos</a></li><hr>
+            <li id="link-mis-gifos"><a href="./templates/misGifos.html">Mis Gifos</a></li><hr>
+            <button id="crear-gifo-link-btn"><i class="fas fa-plus"></i></button>
+        </ul>
+    </div>
     
+    <main>
+        <h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h1>
+        <img src="./assets/ilustra_header.svg" alt="GIFOS">
+        <form id="search-form">
+            <input type="search" name="search-value" placeholder="Busca GIFOS y más">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <h2>Trending</h2>
+        <p id="trending-topics">Reactions, Entertainment, Sports, Stickers, Artists</p>
+        <div>
+            <h2>Trending GIFOS</h2>
+            <p>Mira los últimos <br>GIFOS de nuestra comunidad.</p>
+            <div id="slider">
+                <button id="slider-left-btn"><i class="fas fa-chevron-left"></i></button>
+                <img src="http://via.placeholder.com/357x275" alt="GIF 1">
+                <img src="http://via.placeholder.com/357x275" alt="GIF 2">
+                <img src="http://via.placeholder.com/357x275" alt="GIF 3">
+                <button id="slider-left-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <p>Compartir en:</p>
+            <ul>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></i></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></i></li>
+            </ul>
+        </nav>
+        <p>&copy GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/10a9c4b979.js" crossorigin="anonymous"></script>
 </body>
 </html>
