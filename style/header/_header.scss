@@ -1,0 +1,27 @@
+header{
+    z-index: 1; display: flex; flex-flow: row wrap; 
+    justify-content: space-between; align-items: center; 
+
+    ul{
+        display: flex; flex-flow: row wrap; list-style: none;
+        justify-content: space-between; align-items: center;
+        li{
+            font-family: 'Montserrat', 'sans-serif';  cursor: pointer;
+            a{
+                text-decoration: none;
+            }
+        }
+        button{
+            background: transparent; border-radius: 50%; cursor: pointer;
+        }
+        button:hover{
+            transform: scale(1.02);
+        }
+        button:active{
+            transform: scale(0.98); border: none;
+        }
+    }
+    button[id="menu-button"]{
+        display: none;
+    }
+}

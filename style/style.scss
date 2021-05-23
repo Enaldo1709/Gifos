@@ -1,0 +1,19 @@
+//Importación de las fuentes de google
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap');
+
+//Reglas Básicas
+@import "./normalizing";
+
+//Estilos del header
+@import "./header/header";
+@import "./header/header-responsive";
+@import "./header/header-claro";
+@import "./header/header-oscuro";
+
+//Estilos del homepage
+@import "./home/home";
+@import "./home/home-responsive";
+
+//Estilos del footer
+@import "./footer/footer";
+@import "./footer/footer-responsive";

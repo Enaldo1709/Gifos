@@ -1,0 +1,44 @@
+header{
+    background-color: white; border-top: #572EE5 5px solid;
+    ul{
+        li{
+            color: #572EE5;
+            a{
+                color: #572EE5;
+            }
+        }
+        li:hover{
+            border-bottom: 2px solid #5ED7C6;
+        }
+        button{
+            border: #572EE5 1px solid; color: #572EE5; 
+        }
+        button:hover{
+            background-color: #572EE5; color: white; 
+        }
+        button:active{
+            background-color: #9CAFC3; 
+        }
+    }
+    button[id="menu-button"]{
+        color: #572EE5;
+    }
+}
+div[id="menu"]{
+    background: rgba(87,46,229,0.90);
+    ul{
+        li{
+            color:white;
+            a{
+                color: white; 
+            }
+        }
+    }
+    button{
+        border: #572EE5 1px solid; color: #572EE5; 
+    }
+    
+    button:active{
+        color: white; background-color: #572EE5; 
+    }
+}

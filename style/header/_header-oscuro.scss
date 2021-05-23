@@ -1,0 +1,47 @@
+.dark{
+    header{
+        background-color: #37383C; border-top: black 5px solid;
+        ul{
+            li{
+                color: white;
+                a{
+                    color: white;
+                }
+            }
+            li:hover{
+                border-bottom: 2px solid #5ED7C6;
+            }
+            button{
+                border: white 1px solid; color: white; 
+            }
+            button:hover{
+                background-color: white; color: black; 
+            }
+            button:active{
+                background-color: #9CAFC3; color: white;
+            }
+        }
+        button[id="menu-button"]{
+            color: white;
+        }
+    }
+    div[id="menu"]{
+        background: black;
+        ul{
+            li{
+                color:white;
+                a{
+                    color: white; 
+                }
+            }
+        }
+        button{
+            border: white 1px solid; color: white; background-color: transparent;
+        }
+        
+        button:active{
+            background-color: #9CAFC3; color: white;
+        }
+    }
+    
+}
