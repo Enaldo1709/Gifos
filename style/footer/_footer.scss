@@ -1,0 +1,18 @@
+footer{
+    position: relative; bottom: 0; display: flex; 
+    p{
+        font-family: 'Roboto','sans-serif'; 
+    }
+    nav{
+        display: flex; 
+        ul{
+            display: flex; flex-flow: row wrap; justify-content: space-between;
+            align-items: center; list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

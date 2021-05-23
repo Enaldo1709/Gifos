@@ -1,0 +1,32 @@
+footer{
+    width: 100%; height: 116px; padding: 0 10.8%; flex-flow: row wrap; 
+    justify-content: space-between; align-items: center; 
+    p{
+        font-size: 13px; line-height: 15px;
+    }
+    nav{
+        width: 191px; flex-flow: row wrap; justify-content: space-between;
+        align-items: center;
+        ul{
+            width: 93px; 
+            li{
+                a{
+                    font-size: 20px; line-height: 20px; 
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:430px){
+    footer{
+        height: 196px; padding: 0;
+        flex-flow: column wrap; align-items: center;
+        p{
+            font-size: 15px; line-height: 18px; margin-bottom: 24px;
+        }
+        nav{
+            margin-top: 47px; flex-flow: column wrap; align-items: center;
+        }
+    }
+}
