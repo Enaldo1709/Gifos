@@ -1,0 +1,32 @@
+main[id="Favoritos"]{
+    display: flex; flex-flow: column wrap;
+    width: 100%; align-items: center;
+    img{
+        margin-top: 11px; width: 28px;
+    }
+    h2{
+        font-family: 'Montserrat','sans-serif';font-weight: 700;  
+        font-size: 25px; line-height: 30px; margin-top: 8px;
+        color: #572EE5;
+    }
+    div[id="favoritos-container"]{
+        background-color: transparent; 
+        display: flex;
+        margin-top: 0; margin-bottom: 0;
+        width: 100%; padding: 0 10.8%;
+        div[id="favoritos-empty-container"]{
+            background-color: transparent;
+            img{
+                width: 150px; height: 150px;
+                margin-top: 109.3px;
+            }
+            p{
+                font-family: 'Montserrat','sans-serif'; 
+                font-weight: 700; text-align: center;
+                font-size: 22px; line-height: 33px; margin-top: 23.7px;
+                width: 35%; max-width: 431px; margin-bottom: 137px;
+                color: #50E3C2;
+            }
+        }
+    }
+}

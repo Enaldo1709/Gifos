@@ -23,6 +23,10 @@ body {
   display: none;
 }
 
+.dark {
+  background-color: #37383C;
+}
+
 header {
   z-index: 1;
   display: -webkit-box;
@@ -308,7 +312,7 @@ div[id="menu"] button:active {
   color: white;
 }
 
-main {
+main[id="Home"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,12 +328,12 @@ main {
   overflow: hidden;
 }
 
-main h1 {
+main[id="Home"] h1 {
   text-align: center;
   font-family: 'Montserrat','sans-serif';
 }
 
-main form {
+main[id="Home"] form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,26 +346,344 @@ main form {
           align-items: center;
 }
 
-main form input[type="search"] {
+main[id="Home"] form input[type="search"] {
   border-radius: 27px 0 0 27px;
   border-right: none;
   outline: none;
 }
 
-main form button {
+main[id="Home"] form button {
   border-left: none;
   border-radius: 0 27px 27px 0;
   cursor: pointer;
 }
 
-main h2 {
+main[id="Home"] h2 {
   font-weight: 700;
   font-family: 'Montserrat','sans-serif';
 }
 
-main p {
+main[id="Home"] p {
   font-weight: 400;
   font-family: 'Montserrat','sans-serif';
+}
+
+main[id="Home"] h1 {
+  width: 64.9%;
+  padding: 0 10.8%;
+  margin-top: 76px;
+  font-size: 35px;
+  line-height: 50px;
+}
+
+main[id="Home"] img {
+  width: 399px;
+}
+
+main[id="Home"] form {
+  width: 551px;
+  height: 50px;
+}
+
+main[id="Home"] form input[type="search"] {
+  width: calc(100% - 50px);
+  height: 50px;
+  font-size: 16px;
+  padding-left: 20px;
+  line-height: 19px;
+  color: black;
+  font-family: 'Roboto','sans-serif';
+}
+
+main[id="Home"] form button {
+  width: 50px;
+  height: 50px;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+main[id="Home"] h2 {
+  margin-top: 73px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+main[id="Home"] p {
+  margin-top: 7px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+@media (max-width: 430px) {
+  main[id="Home"] h1 {
+    width: 76.3%;
+    padding: 0;
+    margin-top: 7px;
+    font-size: 25px;
+    line-height: 33px;
+  }
+  main[id="Home"] img {
+    width: 72.8%;
+    margin-top: 31px;
+  }
+  main[id="Home"] form {
+    width: 89.1%;
+    height: 50px;
+  }
+  main[id="Home"] form button {
+    width: 50px;
+    height: 50px;
+    line-height: 20px;
+    font-size: 20px;
+  }
+  main[id="Home"] h2 {
+    margin-top: 31px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  main[id="Home"] p {
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 25px;
+    width: 60%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  main[id="Home"] {
+    position: relative;
+    top: 95px;
+  }
+  main[id="Home"] h1 {
+    margin-top: 24px;
+  }
+}
+
+main[id="Home"] h1 {
+  color: #572EE5;
+}
+
+main[id="Home"] h1 span {
+  color: #50E3C2;
+}
+
+main[id="Home"] form input[type="search"] {
+  border: 1px solid #572EE5;
+  background-color: transparent;
+  border-right: none;
+  color: black;
+}
+
+main[id="Home"] form button {
+  border: 1px solid #572EE5;
+  border-left: none;
+  background-color: transparent;
+  color: #572EE5;
+}
+
+main[id="Home"] h2 {
+  color: #572EE5;
+}
+
+main[id="Home"] p {
+  color: #572EE5;
+}
+
+.dark main[id="Home"] h1 {
+  color: white;
+}
+
+.dark main[id="Home"] h1 span {
+  color: #50E3C2;
+}
+
+.dark main[id="Home"] form input[type="search"] {
+  border: 1px solid white;
+  background-color: transparent;
+  border-right: none;
+  color: white;
+}
+
+.dark main[id="Home"] form button {
+  border: 1px solid white;
+  border-left: none;
+  background-color: transparent;
+  color: white;
+}
+
+.dark main[id="Home"] h2 {
+  color: white;
+}
+
+.dark main[id="Home"] p {
+  color: white;
+}
+
+main[id="Favoritos"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main[id="Favoritos"] img {
+  margin-top: 11px;
+  width: 28px;
+}
+
+main[id="Favoritos"] h2 {
+  font-family: 'Montserrat','sans-serif';
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 8px;
+  color: #572EE5;
+}
+
+main[id="Favoritos"] div[id="favoritos-container"] {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 0 10.8%;
+}
+
+main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] {
+  background-color: transparent;
+}
+
+main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] img {
+  width: 150px;
+  height: 150px;
+  margin-top: 109.3px;
+}
+
+main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
+  font-family: 'Montserrat','sans-serif';
+  font-weight: 700;
+  text-align: center;
+  font-size: 22px;
+  line-height: 33px;
+  margin-top: 23.7px;
+  width: 35%;
+  max-width: 431px;
+  margin-bottom: 137px;
+  color: #50E3C2;
+}
+
+main[id="Favoritos"] img {
+  margin-top: 11px;
+  width: 28px;
+}
+
+main[id="Favoritos"] h2 {
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 8px;
+}
+
+main[id="Favoritos"] div[id="favoritos-container"] {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 0 10.8%;
+}
+
+main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] img {
+  width: 150px;
+  height: 150px;
+  margin-top: 109.3px;
+}
+
+main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
+  font-size: 22px;
+  line-height: 33px;
+  margin-top: 23.7px;
+  width: 50%;
+  max-width: 431px;
+  margin-bottom: 137px;
+}
+
+@media (max-width: 430px) {
+  main[id="Favoritos"] img {
+    margin-top: 5px;
+  }
+  main[id="Favoritos"] h2 {
+    font-size: 20px;
+  }
+  main[id="Favoritos"] div[id="favoritos-container"] {
+    padding: 0 5.6%;
+  }
+  main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] img {
+    width: 75px;
+    height: 75px;
+    margin-top: 30px;
+  }
+  main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
+    font-size: 22px;
+    line-height: 33px;
+    margin-top: 23.7px;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 768px) {
+  main[id="Favoritos"] img {
+    margin-top: 11px;
+    width: 28px;
+  }
+  main[id="Favoritos"] h2 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 8px;
+  }
+  main[id="Favoritos"] div[id="favoritos-container"] {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 0 10.8%;
+  }
+  main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] img {
+    width: 150px;
+    height: 150px;
+    margin-top: 109.3px;
+  }
+  main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
+    font-size: 22px;
+    line-height: 33px;
+    margin-top: 23.7px;
+    width: 35%;
+    max-width: 431px;
+    margin-bottom: 137px;
+  }
+}
+
+main[id="Favoritos"] h2 {
+  color: #572EE5;
+}
+
+main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
+  color: #50E3C2;
+}
+
+.dark main[id="Favoritos"] h2 {
+  color: white;
+}
+
+.dark main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
+  color: white;
 }
 
 main div {
@@ -412,52 +734,6 @@ main div div[id="slider"] button:hover {
           transform: scale(1.02);
 }
 
-main h1 {
-  width: 64.9%;
-  padding: 0 10.8%;
-  margin-top: 76px;
-  font-size: 35px;
-  line-height: 50px;
-}
-
-main img {
-  width: 399px;
-}
-
-main form {
-  width: 551px;
-  height: 50px;
-}
-
-main form input[type="search"] {
-  width: calc(100% - 50px);
-  height: 50px;
-  font-size: 16px;
-  padding-left: 20px;
-  line-height: 19px;
-  color: black;
-  font-family: 'Roboto','sans-serif';
-}
-
-main form button {
-  width: 50px;
-  height: 50px;
-  line-height: 20px;
-  font-size: 20px;
-}
-
-main h2 {
-  margin-top: 73px;
-  font-size: 18px;
-  line-height: 25px;
-}
-
-main p {
-  margin-top: 7px;
-  font-size: 16px;
-  line-height: 25px;
-}
-
 main div {
   width: 100%;
   margin-top: 95px;
@@ -501,39 +777,6 @@ main div div[id="slider"] img {
 }
 
 @media (max-width: 430px) {
-  main h1 {
-    width: 76.3%;
-    padding: 0;
-    margin-top: 7px;
-    font-size: 25px;
-    line-height: 33px;
-  }
-  main img {
-    width: 72.8%;
-    margin-top: 31px;
-  }
-  main form {
-    width: 89.1%;
-    height: 50px;
-  }
-  main form button {
-    width: 50px;
-    height: 50px;
-    line-height: 20px;
-    font-size: 20px;
-  }
-  main h2 {
-    margin-top: 31px;
-    font-size: 16px;
-    line-height: 25px;
-  }
-  main p {
-    margin-top: 2px;
-    font-size: 14px;
-    line-height: 25px;
-    width: 60%;
-    text-align: center;
-  }
   main div {
     width: 100%;
     margin-top: 45px;
@@ -569,46 +812,6 @@ main div div[id="slider"] img {
   }
 }
 
-@media (max-width: 768px) {
-  main {
-    position: relative;
-    top: 95px;
-  }
-  main h1 {
-    margin-top: 24px;
-  }
-}
-
-main h1 {
-  color: #572EE5;
-}
-
-main h1 span {
-  color: #50E3C2;
-}
-
-main form input[type="search"] {
-  border: 1px solid #572EE5;
-  background-color: transparent;
-  border-right: none;
-  color: black;
-}
-
-main form button {
-  border: 1px solid #572EE5;
-  border-left: none;
-  background-color: transparent;
-  color: #572EE5;
-}
-
-main h2 {
-  color: #572EE5;
-}
-
-main p {
-  color: #572EE5;
-}
-
 main div {
   background-color: #F3F5F8;
 }
@@ -629,40 +832,6 @@ main div div[id="slider"] button {
 
 main div div[id="slider"] button:hover {
   background-color: #572EE5;
-  color: white;
-}
-
-.dark main {
-  background-color: #37383C;
-}
-
-.dark main h1 {
-  color: white;
-}
-
-.dark main h1 span {
-  color: #50E3C2;
-}
-
-.dark main form input[type="search"] {
-  border: 1px solid white;
-  background-color: transparent;
-  border-right: none;
-  color: white;
-}
-
-.dark main form button {
-  border: 1px solid white;
-  border-left: none;
-  background-color: transparent;
-  color: white;
-}
-
-.dark main h2 {
-  color: white;
-}
-
-.dark main p {
   color: white;
 }
 
