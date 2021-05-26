@@ -1,0 +1,79 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:wght@100;400;700&display=swap');
+header{
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between; align-items: center;
+    width: 100%; padding: 0 10%; height: 90px;
+    a{
+        font-family: 'Pattaya','sans-serif'; text-decoration: none;
+        font-size: 24px; color: rgba(109, 60, 243,1); 
+    }
+    a:hover p{
+        animation: agrandar 0.5s ease-in-out;
+
+    }
+
+    form#searchBox{
+        display: flex; flex-flow: row nowrap;
+        width: 60%;
+        input[name="search"]{
+            width: calc(100% - 40px); height: 30px; border-radius: 15px 0 0 15px; 
+            border: 1px solid rgba(109, 60, 243,1); border-right: none;
+            padding-left: 10px; outline: none; font-family: 'Roboto','sans-serif';
+        }
+        button{
+            width: 30px; height: 30px; border: 1px solid rgba(109, 60, 243,1);
+            border-radius: 0 50% 50% 0; border-left: none; background-color: rgba(109, 60, 243,1);
+            color: white; font-size: 16px; cursor: pointer;
+        }
+    }
+
+    button{
+        width: 100px; height: 30px; border: 1px solid rgba(109, 60, 243,1);
+        border-radius: 3px; background-color: rgba(109, 60, 243,1);
+        color: white; font-size: 16px; cursor: pointer;
+    }
+    
+}
+@keyframes agrandar {
+    0%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.01);
+    }
+    100%{
+        transform: scale(1.005);
+    }
+}
+main{
+    div[id="container"]{
+        div[id="card"]{
+            position: relative;
+            width: 150px;
+            img{
+                border: none; width: 100%;
+                position: relative; margin-top: 0;
+            }
+            div[id="cover"]{
+                position: absolute; z-index: 2; height: 100%; display: none;
+                width: 100%; background-color: rgba(109, 60, 243, 0.37); top: 0;
+                justify-content: center;
+                a{
+                    margin-top: 70%; height: 20px;
+                    button{
+                        height: 20px; width: 40px; cursor: pointer;
+                    }
+                }
+            }
+            
+        }
+    }
+    iframe:hover ~ div[id="cover"]{
+        display: flex; 
+    }
+}
