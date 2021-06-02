@@ -18,5 +18,6 @@ Para ejecutar este proyecto necesitas:
 
 # Autores 
 Enaldo Narváez Yepes - Desarrollador del proyecto
+Emiliano Gamarra Caballero - Desarrollador del Proyecto
 
 Espero que el proyecto sea de su agrado y cumpla con los requerimientos necesarios.
