@@ -1,7 +1,7 @@
 main{
     display: flex; flex-flow: column wrap;
     align-items: center; max-width: 1440px; width: 100%; overflow: hidden;
-    section#container{
+    section#container.home{
         display: flex; flex-flow: column wrap;
         align-items: center;
         h1{
@@ -17,7 +17,7 @@ main{
             }
         }
 
-        div#trending-topics{
+        div.trending-topics{
             display: flex; flex-flow: column wrap; align-items: center;
             h2{
                 font-weight: 700; font-family: 'Montserrat','sans-serif';
@@ -27,5 +27,5 @@ main{
             }
         }
     }
-
+    
 }

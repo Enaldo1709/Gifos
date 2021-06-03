@@ -328,7 +328,7 @@ main {
   overflow: hidden;
 }
 
-main section#container {
+main section#container.home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,12 +341,12 @@ main section#container {
           align-items: center;
 }
 
-main section#container h1 {
+main section#container.home h1 {
   text-align: center;
   font-family: 'Montserrat','sans-serif';
 }
 
-main section#container form {
+main section#container.home form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,19 +359,19 @@ main section#container form {
           align-items: center;
 }
 
-main section#container form input[type="search"] {
+main section#container.home form input[type="search"] {
   border-radius: 27px 0 0 27px;
   border-right: none;
   outline: none;
 }
 
-main section#container form button {
+main section#container.home form button {
   border-left: none;
   border-radius: 0 27px 27px 0;
   cursor: pointer;
 }
 
-main section#container div#trending-topics {
+main section#container.home div.trending-topics {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,12 +384,12 @@ main section#container div#trending-topics {
           align-items: center;
 }
 
-main section#container div#trending-topics h2 {
+main section#container.home div.trending-topics h2 {
   font-weight: 700;
   font-family: 'Montserrat','sans-serif';
 }
 
-main section#container div#trending-topics p {
+main section#container.home div.trending-topics p {
   font-weight: 400;
   font-family: 'Montserrat','sans-serif';
 }
@@ -428,13 +428,13 @@ main section#container form button {
   font-size: 20px;
 }
 
-main section#container div#trending-topics h2 {
+main section#container div.trending-topics h2 {
   margin-top: 73px;
   font-size: 18px;
   line-height: 25px;
 }
 
-main section#container div#trending-topics p {
+main section#container div.trending-topics p {
   margin-top: 7px;
   font-size: 16px;
   line-height: 25px;
@@ -538,11 +538,11 @@ main section#container div#trending-topics p {
   color: white;
 }
 
-.dark main section#container div#trending-topics h2 {
+.dark main section#container div.trending-topics h2 {
   color: white;
 }
 
-.dark main section#container div#trending-topics p {
+.dark main section#container div.trending-topics p {
   color: white;
 }
 
