@@ -19,6 +19,7 @@ export var API={
         trending:"gifs/trending",
         search:"gifs/search",
         suggestions:"tags/related/",
+        trendingTopics:"trending/searches"
     },
 
     /**
@@ -93,6 +94,29 @@ export var API={
                 response.forEach(value =>{
                     tags.push(value.name);
                 })
+            }
+            return tags;
+        })
+        .catch(error => {console.error("Error en la respuesta del servidor: "+error.message+'\n'+error.stack);})
+        return tags;
+    },
+    
+    getTrendingTags : async (requested=5) =>{
+        /**
+         * Funcion que retorna los terminos más buscados ue son tendencia en el momento.
+         * @param{string: term}
+         * @param{number: requested}
+         * @return{string[]: tags}
+        */
+        var url=API.API_URL+API.endpoint.trendingTopics+`?api_key=${API.API_KEY}`;
+        var tags = fetch(url)
+        .then(response => response.json())
+        .then(response => response.data)
+        .then(response => {
+            let tags = "";
+            var total = (requested<=response.length)?requested:response.length;
+            for(let i = 0; i<total; i++){
+                tags+=`${response[i].charAt(0).toUpperCase()}${response[i].slice(1)}${(i===(total-1))?"":", "}`
             }
             return tags;
         })
