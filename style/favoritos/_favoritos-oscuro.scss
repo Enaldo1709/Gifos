@@ -1,0 +1,14 @@
+.dark{
+    main[id="Favoritos"]{
+        h2{
+            color: white;
+        }
+        div[id="favoritos-container"]{
+            div[id="favoritos-empty-container"]{
+                p{
+                    color: white;
+                }
+            }
+        }
+    }    
+}

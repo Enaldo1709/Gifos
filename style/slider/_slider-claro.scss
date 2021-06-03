@@ -1,0 +1,22 @@
+main{
+    div{
+        background-color: #F3F5F8; 
+        h2{
+            color: #572EE5;
+        }
+        p{
+            color: black;
+        }
+
+        div[id="slider"]{
+            button{
+                background-color: transparent;
+                border: #572EE5 1px solid; color: #572EE5; 
+            }
+            button:hover{
+                background-color: #572EE5; color:white; 
+            }
+            
+        }
+    }
+}
