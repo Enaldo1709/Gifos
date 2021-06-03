@@ -1,6 +1,5 @@
 .dark{
-    main{
-        background-color: #37383C; 
+    main[id="Home"]{
         h1{
             color: white;
             span{
@@ -25,25 +24,5 @@
             color: white;
         }
     
-        div{
-            background-color: #222326; 
-            h2{
-                color: white;
-            }
-            p{
-                color: white;
-            }
-    
-            div[id="slider"]{
-                button{
-                    background-color: transparent;
-                    border: white 1px solid; color: white; 
-                }
-                button:hover{
-                    background-color: white; color:#222326; 
-                }
-                
-            }
-        }
     }
 }
