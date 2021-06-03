@@ -1,26 +1,29 @@
-main[id="Home"]{
-    h1{
-        color: #572EE5;
-        span{
-            color: #50E3C2;
+main{
+    section#container{
+        h1{
+            color: #572EE5;
+            span{
+                color: #50E3C2;
+            }
+        }
+        form{
+            input[type="search"]{
+                border: 1px solid #572EE5; background-color: transparent; 
+                border-right: none; color: black;
+            }
+            button{
+                border: 1px solid #572EE5; border-left: none;
+                background-color: transparent; color: #572EE5; 
+            }
+        }
+        
+        div#trending-topics{
+            h2{
+                color: #572EE5;
+            }
+            p{
+                color: #572EE5;
+            }
         }
     }
-    form{
-        input[type="search"]{
-            border: 1px solid #572EE5; background-color: transparent; 
-            border-right: none; color: black;
-        }
-        button{
-            border: 1px solid #572EE5; border-left: none;
-            background-color: transparent; color: #572EE5; 
-        }
-    }
-
-    h2{
-        color: #572EE5;
-    }
-    p{
-        color: #572EE5;
-    }
-
 }

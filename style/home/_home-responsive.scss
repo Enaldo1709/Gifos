@@ -1,55 +1,64 @@
-main[id="Home"]{
-    h1{
-        width: 64.9%; padding: 0 10.8%; margin-top: 76px;
-        font-size: 35px; line-height: 50px; 
-    }
-    img{
-        width: 399px; 
-    }
-    form{
-        width: 551px; height: 50px; 
-        input[type="search"]{
-            width: calc(100% - 50px); height: 50px; font-size: 16px; padding-left: 20px;
-            line-height: 19px; color: black; font-family: 'Roboto','sans-serif';
-        }
-        button{
-            width: 50px; height: 50px;
-            line-height: 20px; font-size: 20px;
-        }
-    }
-    h2{
-        margin-top: 73px; font-size: 18px; line-height: 25px;
-    }
-    p{
-        margin-top: 7px; font-size: 16px; line-height: 25px;
-    }
-    
-}
-
-@media (max-width:430px){
-    main[id="Home"]{
+main{
+    section#container{
         h1{
-            width: 76.3%; padding: 0; margin-top: 7px;
-            font-size: 25px; line-height: 33px; 
+            width: 64.9%; padding: 0 10.8%; margin-top: 76px;
+            font-size: 35px; line-height: 50px; 
         }
         img{
-            width: 72.8%; margin-top: 31px;
+            width: 399px; 
         }
         form{
-            width: 89.1%; height: 50px; 
+            width: 551px; height: 50px; 
+            input[type="search"]{
+                width: calc(100% - 50px); height: 50px; font-size: 16px; padding-left: 20px;
+                line-height: 19px; color: black; font-family: 'Roboto','sans-serif';
+            }
             button{
                 width: 50px; height: 50px;
                 line-height: 20px; font-size: 20px;
             }
         }
-        h2{
-            margin-top: 31px; font-size: 16px; line-height: 25px;
+
+        div#trending-topics{
+            
+            h2{
+                margin-top: 73px; font-size: 18px; line-height: 25px;
+            }
+            p{
+                margin-top: 7px; font-size: 16px; line-height: 25px;
+            }
         }
-        p{
-            margin-top: 2px; font-size: 14px; line-height: 25px; 
-            width: 60%; text-align: center;
+    }
+}
+
+@media (max-width:430px){
+    main{
+        section#container{
+            h1{
+                width: 76.3%; padding: 0; margin-top: 7px;
+                font-size: 25px; line-height: 33px; 
+            }
+            img{
+                width: 72.8%; margin-top: 31px;
+            }
+            form{
+                width: 89.1%; height: 50px; 
+                button{
+                    width: 50px; height: 50px;
+                    line-height: 20px; font-size: 20px;
+                }
+            }
+
+            div#trending-topics{
+                h2{
+                    margin-top: 31px; font-size: 16px; line-height: 25px;
+                }
+                p{
+                    margin-top: 2px; font-size: 14px; line-height: 25px; 
+                    width: 60%; text-align: center;
+                }
+            }
         }
-        
     }
 }
 

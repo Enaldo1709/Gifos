@@ -312,7 +312,7 @@ div[id="menu"] button:active {
   color: white;
 }
 
-main[id="Home"] {
+main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,12 +328,25 @@ main[id="Home"] {
   overflow: hidden;
 }
 
-main[id="Home"] h1 {
+main section#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#container h1 {
   text-align: center;
   font-family: 'Montserrat','sans-serif';
 }
 
-main[id="Home"] form {
+main section#container form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,29 +359,42 @@ main[id="Home"] form {
           align-items: center;
 }
 
-main[id="Home"] form input[type="search"] {
+main section#container form input[type="search"] {
   border-radius: 27px 0 0 27px;
   border-right: none;
   outline: none;
 }
 
-main[id="Home"] form button {
+main section#container form button {
   border-left: none;
   border-radius: 0 27px 27px 0;
   cursor: pointer;
 }
 
-main[id="Home"] h2 {
+main section#container div#trending-topics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#container div#trending-topics h2 {
   font-weight: 700;
   font-family: 'Montserrat','sans-serif';
 }
 
-main[id="Home"] p {
+main section#container div#trending-topics p {
   font-weight: 400;
   font-family: 'Montserrat','sans-serif';
 }
 
-main[id="Home"] h1 {
+main section#container h1 {
   width: 64.9%;
   padding: 0 10.8%;
   margin-top: 76px;
@@ -376,16 +402,16 @@ main[id="Home"] h1 {
   line-height: 50px;
 }
 
-main[id="Home"] img {
+main section#container img {
   width: 399px;
 }
 
-main[id="Home"] form {
+main section#container form {
   width: 551px;
   height: 50px;
 }
 
-main[id="Home"] form input[type="search"] {
+main section#container form input[type="search"] {
   width: calc(100% - 50px);
   height: 50px;
   font-size: 16px;
@@ -395,53 +421,53 @@ main[id="Home"] form input[type="search"] {
   font-family: 'Roboto','sans-serif';
 }
 
-main[id="Home"] form button {
+main section#container form button {
   width: 50px;
   height: 50px;
   line-height: 20px;
   font-size: 20px;
 }
 
-main[id="Home"] h2 {
+main section#container div#trending-topics h2 {
   margin-top: 73px;
   font-size: 18px;
   line-height: 25px;
 }
 
-main[id="Home"] p {
+main section#container div#trending-topics p {
   margin-top: 7px;
   font-size: 16px;
   line-height: 25px;
 }
 
 @media (max-width: 430px) {
-  main[id="Home"] h1 {
+  main section#container h1 {
     width: 76.3%;
     padding: 0;
     margin-top: 7px;
     font-size: 25px;
     line-height: 33px;
   }
-  main[id="Home"] img {
+  main section#container img {
     width: 72.8%;
     margin-top: 31px;
   }
-  main[id="Home"] form {
+  main section#container form {
     width: 89.1%;
     height: 50px;
   }
-  main[id="Home"] form button {
+  main section#container form button {
     width: 50px;
     height: 50px;
     line-height: 20px;
     font-size: 20px;
   }
-  main[id="Home"] h2 {
+  main section#container div#trending-topics h2 {
     margin-top: 31px;
     font-size: 16px;
     line-height: 25px;
   }
-  main[id="Home"] p {
+  main section#container div#trending-topics p {
     margin-top: 2px;
     font-size: 14px;
     line-height: 25px;
@@ -460,63 +486,63 @@ main[id="Home"] p {
   }
 }
 
-main[id="Home"] h1 {
+main section#container h1 {
   color: #572EE5;
 }
 
-main[id="Home"] h1 span {
+main section#container h1 span {
   color: #50E3C2;
 }
 
-main[id="Home"] form input[type="search"] {
+main section#container form input[type="search"] {
   border: 1px solid #572EE5;
   background-color: transparent;
   border-right: none;
   color: black;
 }
 
-main[id="Home"] form button {
+main section#container form button {
   border: 1px solid #572EE5;
   border-left: none;
   background-color: transparent;
   color: #572EE5;
 }
 
-main[id="Home"] h2 {
+main section#container div#trending-topics h2 {
   color: #572EE5;
 }
 
-main[id="Home"] p {
+main section#container div#trending-topics p {
   color: #572EE5;
 }
 
-.dark main[id="Home"] h1 {
+.dark main section#container h1 {
   color: white;
 }
 
-.dark main[id="Home"] h1 span {
+.dark main section#container h1 span {
   color: #50E3C2;
 }
 
-.dark main[id="Home"] form input[type="search"] {
+.dark main section#container form input[type="search"] {
   border: 1px solid white;
   background-color: transparent;
   border-right: none;
   color: white;
 }
 
-.dark main[id="Home"] form button {
+.dark main section#container form button {
   border: 1px solid white;
   border-left: none;
   background-color: transparent;
   color: white;
 }
 
-.dark main[id="Home"] h2 {
+.dark main section#container div#trending-topics h2 {
   color: white;
 }
 
-.dark main[id="Home"] p {
+.dark main section#container div#trending-topics p {
   color: white;
 }
 
@@ -686,7 +712,7 @@ main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-conta
   color: white;
 }
 
-main div {
+main section#trending-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,17 +725,17 @@ main div {
           align-items: center;
 }
 
-main div h2 {
+main section#trending-slider h2 {
   font-weight: 700;
   font-family: 'Montserrat','sans-serif';
 }
 
-main div p {
+main section#trending-slider p {
   font-weight: 400;
   font-family: 'Roboto','sans-serif';
 }
 
-main div div[id="slider"] {
+main section#trending-slider div[id="slider"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,44 +751,44 @@ main div div[id="slider"] {
           align-items: center;
 }
 
-main div div[id="slider"] button {
+main section#trending-slider div[id="slider"] button {
   cursor: pointer;
 }
 
-main div div[id="slider"] button:hover {
+main section#trending-slider div[id="slider"] button:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-main div {
+main section#trending-slider {
   width: 100%;
   margin-top: 95px;
 }
 
-main div h2 {
+main section#trending-slider h2 {
   margin-top: 67px;
   font-size: 25px;
   line-height: 30px;
 }
 
-main div p {
+main section#trending-slider p {
   margin-top: 12px;
   font-size: 18px;
   line-height: 21px;
 }
 
-main div p br {
+main section#trending-slider p br {
   display: none;
 }
 
-main div div[id="slider"] {
+main section#trending-slider div[id="slider"] {
   width: 100%;
   margin-bottom: 182px;
   margin-top: 53px;
   padding: 0 6.5%;
 }
 
-main div div[id="slider"] button {
+main section#trending-slider div[id="slider"] button {
   width: 2.8vw;
   height: 2.8vw;
   max-width: 40px;
@@ -771,7 +797,7 @@ main div div[id="slider"] button {
   line-height: 1.7vw;
 }
 
-main div div[id="slider"] img {
+main section#trending-slider div[id="slider"] img {
   width: 24.8vw;
   max-width: 357px;
 }
@@ -812,48 +838,48 @@ main div div[id="slider"] img {
   }
 }
 
-main div {
+main section#trending-slider {
   background-color: #F3F5F8;
 }
 
-main div h2 {
+main section#trending-slider h2 {
   color: #572EE5;
 }
 
-main div p {
+main section#trending-slider p {
   color: black;
 }
 
-main div div[id="slider"] button {
+main section#trending-slider div[id="slider"] button {
   background-color: transparent;
   border: #572EE5 1px solid;
   color: #572EE5;
 }
 
-main div div[id="slider"] button:hover {
+main section#trending-slider div[id="slider"] button:hover {
   background-color: #572EE5;
   color: white;
 }
 
-.dark main div {
+.dark main section#trending-slider {
   background-color: #222326;
 }
 
-.dark main div h2 {
+.dark main section#trending-slider h2 {
   color: white;
 }
 
-.dark main div p {
+.dark main section#trending-slider p {
   color: white;
 }
 
-.dark main div div[id="slider"] button {
+.dark main section#trending-slider div[id="slider"] button {
   background-color: transparent;
   border: white 1px solid;
   color: white;
 }
 
-.dark main div div[id="slider"] button:hover {
+.dark main section#trending-slider div[id="slider"] button:hover {
   background-color: white;
   color: #222326;
 }

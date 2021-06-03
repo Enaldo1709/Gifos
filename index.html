@@ -27,16 +27,21 @@
         </ul>
     </div>
     
-    <main id="Home">
-        <h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h1>
-        <img src="./assets/ilustra_header.svg" alt="GIFOS">
-        <form id="search-form">
-            <input type="search" name="search-value" placeholder="Busca GIFOS y más">
-            <button type="submit"><i class="fas fa-search"></i></button>
-        </form>
-        <h2>Trending</h2>
-        <p id="trending-topics">Reactions, Entertainment, Sports, Stickers, Artists</p>
-        <div>
+    <main>
+        <section id="container">
+            <h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h1>
+            <img src="./assets/ilustra_header.svg" alt="GIFOS">
+            <form id="search-form">
+                <input type="search" name="search-value" placeholder="Busca GIFOS y más">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div id="trending-topics">
+                <h2>Trending</h2>
+                <p id="trending-topics">Reactions, Entertainment, Sports, Stickers, Artists</p>
+            </div>
+        </section>
+        
+        <section id="trending-slider">
             <h2>Trending GIFOS</h2>
             <p>Mira los últimos <br>GIFOS de nuestra comunidad.</p>
             <div id="slider">
@@ -46,7 +51,7 @@
                 <img src="http://via.placeholder.com/357x275" alt="GIF 3">
                 <button id="slider-left-btn"><i class="fas fa-chevron-right"></i></button>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
