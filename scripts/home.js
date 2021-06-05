@@ -10,7 +10,8 @@ var homeHTML = `<h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</s
 <div class="trending-topics">
     <h2>Trending</h2>
     <p id="trending-topics"></p>
-</div>`;
+</div>
+<div id="result-box"></div>`;
 
 var container = document.getElementById("container");
 

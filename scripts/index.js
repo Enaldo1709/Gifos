@@ -4,6 +4,7 @@ import { changeTheme } from "./modules/changeTheme.js";
 
 
 document.addEventListener("DOMContentLoaded",()=>{
+    var gifs=[];
     var header = document.getElementsByTagName("header")[0];
     var footer = document.getElementsByTagName("footer")[0];
 
@@ -18,7 +19,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     
     searchBox.addEventListener("submit",(e)=>{
         e.preventDefault();
-        buscar(offset,searchBox);
+        gifs = buscar(offset,searchBox);
     })
     
 })

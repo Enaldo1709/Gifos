@@ -32,32 +32,56 @@ export var API={
         /**
          * Funcion que consulta la API
          * @param{string: url}
-         * @return{string: responseText}
+         * @return{[gifs[]: gifs}
         */
-        var responseText=fetch(url)
+        
+        var gifs =fetch(url)
         .then(response => response.json())
         .then(response => response.data)
         .then(response => {
             //console.log(response);
-            let responseText = '';
+            var gifs = []; var gif = {};
             response.forEach(object => {
-                responseText+=`<div id="card">\n\t<img src="${object.images.original.webp?object.images.original.webp:object.images.original.url}">\n\t<div id="cover">\n\t\t<a href="${object.url}"><button>Ver en GIPHY</button></a>\n\t</div>\n</div>`;
+                gif = {
+                    id:response.id,
+                    title:object.title,
+                    image:object.images.fixed_height_downsampled.webp?{
+                        url:object.images.fixed_height_downsampled.url,
+                        webp:object.images.fixed_height_downsampled.webp,
+                        default:object.images.fixed_height_downsampled.webp
+                    }:object.images.fixed_height_downsampled.url?{
+                        url:object.images.fixed_height_downsampled.url,
+                        default:object.images.fixed_height_downsampled.url
+                    }:object.images.original.webp?{
+                        url:object.images.original.url,
+                        webp:object.images.original.webp,
+                        default:object.images.original.webp
+                    }:{
+                        url:object.images.original.url,
+                        default:object.images.original.url
+                    },
+                    user:object.username,
+                    url:object.url
+                };
+                gifs.push(gif);
+                
             });
-            return responseText;   
+            return gifs;
         })
         .catch(error => {console.error("Error en la respuesta del servidor: "+error.message+'\n'+error.stack);})
-        return responseText;
+        return gifs;
     },
+
 
     getTrendingGifos:async (limit=12,offset=0)=>{
         /**
          * Funcion que retorna los trending Gifs de la API
          * @param{number: limit}
          * @param{number: offset}
-         * @return{string: responseText}
+         * @return{[gifs[]: gifs}
         */
         var url=API.API_URL+API.endpoint.trending+`?api_key=${API.API_KEY}&limit=${limit}`+(offset==0)?'':`&offset=${offset}`;
-        responseText= await API.pullGifos(url);
+        return  await API.pullGifos(url);
     },
 
     getSearchResults:async (query,limit=12,offset=0) =>{
@@ -66,7 +90,7 @@ export var API={
          * @param{string: query}
          * @param{number: limit}
          * @param{number: offset}
-         * @return{string: responseText}
+         * @return{[gifs[]: gifs}
         */
         var url=`${API.API_URL}${API.endpoint.search}?api_key=${API.API_KEY}&q=${query}&limit=${limit}${(offset==0)?'':(`&offset=${offset}`)}`;
         //console.log(url)
