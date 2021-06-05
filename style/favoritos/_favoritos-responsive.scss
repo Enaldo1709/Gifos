@@ -1,4 +1,4 @@
-main[id="Favoritos"]{
+section#container.favoritos{
     img{
         margin-top: 11px; width: 28px;
     }
@@ -22,7 +22,7 @@ main[id="Favoritos"]{
 }
 
 @media(max-width:430px){
-    main[id="Favoritos"]{
+    section#container.favoritos{
         img{
             margin-top: 5px; 
         }
@@ -46,7 +46,7 @@ main[id="Favoritos"]{
 }
 
 @media(min-width:431px) and (max-width:768px){
-    main[id="Favoritos"]{
+    section#container.favoritos{
         img{
             margin-top: 11px; width: 28px;
         }

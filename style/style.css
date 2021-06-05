@@ -508,11 +508,11 @@ main section#container form button {
   color: #572EE5;
 }
 
-main section#container div#trending-topics h2 {
+main section#container div.trending-topics h2 {
   color: #572EE5;
 }
 
-main section#container div#trending-topics p {
+main section#container div.trending-topics p {
   color: #572EE5;
 }
 
@@ -546,7 +546,7 @@ main section#container div#trending-topics p {
   color: white;
 }
 
-main[id="Favoritos"] {
+section#container.favoritos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,12 +560,12 @@ main[id="Favoritos"] {
           align-items: center;
 }
 
-main[id="Favoritos"] img {
+section#container.favoritos img {
   margin-top: 11px;
   width: 28px;
 }
 
-main[id="Favoritos"] h2 {
+section#container.favoritos h2 {
   font-family: 'Montserrat','sans-serif';
   font-weight: 700;
   font-size: 25px;
@@ -574,7 +574,7 @@ main[id="Favoritos"] h2 {
   color: #572EE5;
 }
 
-main[id="Favoritos"] div[id="favoritos-container"] {
+section#container.favoritos div[id="favoritos-container"] {
   background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -585,17 +585,17 @@ main[id="Favoritos"] div[id="favoritos-container"] {
   padding: 0 10.8%;
 }
 
-main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] {
+section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] {
   background-color: transparent;
 }
 
-main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] img {
+section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] img {
   width: 150px;
   height: 150px;
   margin-top: 109.3px;
 }
 
-main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
+section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
   font-family: 'Montserrat','sans-serif';
   font-weight: 700;
   text-align: center;
@@ -608,31 +608,31 @@ main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-conta
   color: #50E3C2;
 }
 
-main[id="Favoritos"] img {
+section#container.favoritos img {
   margin-top: 11px;
   width: 28px;
 }
 
-main[id="Favoritos"] h2 {
+section#container.favoritos h2 {
   font-size: 25px;
   line-height: 30px;
   margin-top: 8px;
 }
 
-main[id="Favoritos"] div[id="favoritos-container"] {
+section#container.favoritos div[id="favoritos-container"] {
   margin-top: 0;
   margin-bottom: 0;
   width: 100%;
   padding: 0 10.8%;
 }
 
-main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] img {
+section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] img {
   width: 150px;
   height: 150px;
   margin-top: 109.3px;
 }
 
-main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
+section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
   font-size: 22px;
   line-height: 33px;
   margin-top: 23.7px;
@@ -642,21 +642,21 @@ main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-conta
 }
 
 @media (max-width: 430px) {
-  main[id="Favoritos"] img {
+  section#container.favoritos img {
     margin-top: 5px;
   }
-  main[id="Favoritos"] h2 {
+  section#container.favoritos h2 {
     font-size: 20px;
   }
-  main[id="Favoritos"] div[id="favoritos-container"] {
+  section#container.favoritos div[id="favoritos-container"] {
     padding: 0 5.6%;
   }
-  main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] img {
+  section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] img {
     width: 75px;
     height: 75px;
     margin-top: 30px;
   }
-  main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
+  section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
     font-size: 22px;
     line-height: 33px;
     margin-top: 23.7px;
@@ -666,27 +666,27 @@ main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-conta
 }
 
 @media (min-width: 431px) and (max-width: 768px) {
-  main[id="Favoritos"] img {
+  section#container.favoritos img {
     margin-top: 11px;
     width: 28px;
   }
-  main[id="Favoritos"] h2 {
+  section#container.favoritos h2 {
     font-size: 25px;
     line-height: 30px;
     margin-top: 8px;
   }
-  main[id="Favoritos"] div[id="favoritos-container"] {
+  section#container.favoritos div[id="favoritos-container"] {
     margin-top: 0;
     margin-bottom: 0;
     width: 100%;
     padding: 0 10.8%;
   }
-  main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] img {
+  section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] img {
     width: 150px;
     height: 150px;
     margin-top: 109.3px;
   }
-  main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
+  section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
     font-size: 22px;
     line-height: 33px;
     margin-top: 23.7px;
@@ -696,19 +696,19 @@ main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-conta
   }
 }
 
-main[id="Favoritos"] h2 {
+section#container.favoritos h2 {
   color: #572EE5;
 }
 
-main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
+section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
   color: #50E3C2;
 }
 
-.dark main[id="Favoritos"] h2 {
+.dark section#container.favoritos h2 {
   color: white;
 }
 
-.dark main[id="Favoritos"] div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
+.dark section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
   color: white;
 }
 
@@ -882,6 +882,142 @@ main section#trending-slider div[id="slider"] button:hover {
 .dark main section#trending-slider div[id="slider"] button:hover {
   background-color: white;
   color: #222326;
+}
+
+main section#container div#result-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  padding: 0 10.8%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section#container div#result-box h2 {
+  width: 100%;
+  margin-top: 82px;
+  font-size: 35px;
+  line-height: 30px;
+  font-family: 'Montserrat','sans-serif';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 59px;
+  color: #572EE5;
+}
+
+main section#container div#result-box div.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(92.5% / 4);
+  height: calc(0.784 * 3 * 92.5vw / 16);
+  margin-bottom: calc(0.784 * 2.5vw);
+  overflow: hidden;
+}
+
+main section#container div#result-box div.card img {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+main section#container div#result-box div.card div.cover {
+  position: absolute;
+  width: 100%;
+  height: calc(0.784 * 3 * 92.5vw / 16);
+  background: rgba(87, 46, 229, 0.7);
+  z-index: 2;
+  display: none;
+}
+
+main section#container div#result-box div.card div.cover nav {
+  width: 100%;
+  padding-left: 50%;
+  height: 32px;
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#container div#result-box div.card div.cover nav a {
+  text-decoration: none;
+  color: #572EE5;
+}
+
+main section#container div#result-box div.card div.cover nav button {
+  color: #572EE5;
+  width: 2.2vw;
+  height: 2.2vw;
+  max-height: 32px;
+  max-width: 32px;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+  opacity: 0.7;
+  font-size: 1.3vw;
+  margin: 10px 0;
+}
+
+main section#container div#result-box div.card div.cover nav button:hover {
+  opacity: 1;
+}
+
+main section#container div#result-box div.card div.cover h4 {
+  color: white;
+  font-size: 15px;
+  font-family: 'Roboto','sans-serif';
+  font-weight: 400;
+  line-height: 18px;
+  width: 100%;
+  padding: 0 13px;
+  margin-top: 30%;
+  overflow: hidden;
+}
+
+main section#container div#result-box div.card div.cover a.title {
+  text-decoration: none;
+  outline: none;
+  width: 100%;
+  color: white;
+}
+
+main section#container div#result-box div.card div.cover a.title h3 {
+  padding: 0 13px;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 5px;
+  font-family: 'Roboto','sans-serif';
+  font-weight: 700;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+main section#container div#result-box div.card:hover div.cover {
+  display: block;
 }
 
 footer {
