@@ -52,6 +52,14 @@ main{
             div.card:hover div.cover{
                 display: block;
             }
+
+            div#noResults{
+                width: 100%;
+                img{
+                    margin-top: 7.57vw; width: 150px; height: 150px;
+                }
+                
+            }
         }
     }
 }

@@ -11,8 +11,10 @@ export var buscar = async (offset,searchBox) =>{
 <img src="./assets/icon-busqueda-sin-resultado.svg">
 <p>Intenta con otra búsqueda</p>
 </div>`;
+    
+    console.log(gifs.length,gifs);
     if(trendingBox.classList.contains("noVisible")) trendingBox.classList.add("noVisible");
-    resultBox.innerHTML=title + ((gifs==[])?noResults:parseGifos(gifs));
+    resultBox.innerHTML=title + ((gifs.length==0)?noResults:parseGifos(gifs));
     return gifs;
 }
 

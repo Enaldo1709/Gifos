@@ -55,6 +55,12 @@ main{
             div.card:hover div.cover{
                 display: block;
             }
+
+            div#noResults{
+                display: flex; flex-flow: column wrap;
+                align-items: center; 
+                
+            }
         }
     }
 }
