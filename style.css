@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+section#slider-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#slider-section h2 {
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  font-size: 20px;
+  color: blueviolet;
+}
+
+section#slider-section p {
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  font-size: 14px;
+  color: blue;
+}
+
+section#slider-section div.slider-container {
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+}
+
+section#slider-section div.slider-container div#slider {
+  width: 300%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin-left: -100%;
+}
+
+section#slider-section div.slider-container div#slider div.slider-card-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 3%;
+}
+
+section#slider-section div.slider-container div#slider div.slider-card-container img {
+  width: 30%;
+}
+
+section#slider-section div.slider-container button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: calc(50% - 15px);
+}
+
+section#slider-section div.slider-container button#slider-left {
+  left: 1%;
+}
+
+section#slider-section div.slider-container button#slider-right {
+  right: 1%;
+}
+/*# sourceMappingURL=style.css.map */
