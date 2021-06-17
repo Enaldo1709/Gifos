@@ -80,7 +80,9 @@ export var API={
          * @param{number: offset}
          * @return{[gifs[]: gifs}
         */
-        var url=API.API_URL+API.endpoint.trending+`?api_key=${API.API_KEY}&limit=${limit}`+(offset==0)?'':`&offset=${offset}`;
+        var url = `${API.API_URL}${API.endpoint.trending}?api_key=${API.API_KEY}&limit=${limit}${(offset==0)?'':`&offset=${offset}`}`;
+
+        console.log(url);
         return  await API.pullGifos(url);
     },
 

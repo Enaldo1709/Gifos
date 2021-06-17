@@ -1,5 +1,5 @@
 main{
-    section#trending-slider{
+    section.trending-slider{
         display: flex; flex-flow: column wrap; align-items: center; 
 
         h2{
@@ -8,17 +8,14 @@ main{
         p{
             font-weight: 400; font-family: 'Roboto','sans-serif';
         }
-
-        div[id="slider"]{
-            display: flex; flex-flow: row nowrap; justify-content: space-between; 
-            align-items: center; 
+        div.slider-container{
+            position: relative; overflow: hidden;
             button{
-                cursor: pointer;
+                position: absolute; cursor: pointer;
+                &:hover{
+                    transform: scale(1.02);
+                }
             }
-            button:hover{
-                transform: scale(1.02);
-            }
-            
         }
     }
 }

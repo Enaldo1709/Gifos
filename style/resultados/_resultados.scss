@@ -1,0 +1,17 @@
+main{
+    section#container{
+        div#result-box{
+            display: flex; flex-flow: row wrap; justify-content: space-between;
+            h2{
+                font-family: 'Montserrat','sans-serif'; font-weight: 700; 
+                text-align: center; color: #572EE5;
+            }
+
+            div#noResults{
+                display: flex; flex-flow: column wrap;
+                align-items: center; 
+                
+            }
+        }
+    }
+}

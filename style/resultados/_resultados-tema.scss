@@ -1,0 +1,19 @@
+main{
+    section#container{
+        div#result-box{
+            h2{
+                 color: #572EE5;
+                
+            }
+        }
+    }
+    &.dark{
+        section#container{
+            div#result-box{
+                h2{
+                    color: white;
+                }
+            }
+        }           
+    }
+}
