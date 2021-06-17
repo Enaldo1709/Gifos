@@ -712,7 +712,7 @@ section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empt
   color: white;
 }
 
-main section#trending-slider {
+main section.trending-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,17 +725,88 @@ main section#trending-slider {
           align-items: center;
 }
 
-main section#trending-slider h2 {
+main section.trending-slider h2 {
   font-weight: 700;
   font-family: 'Montserrat','sans-serif';
 }
 
-main section#trending-slider p {
+main section.trending-slider p {
   font-weight: 400;
   font-family: 'Roboto','sans-serif';
 }
 
-main section#trending-slider div[id="slider"] {
+main section.trending-slider div.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+main section.trending-slider div.slider-container button {
+  position: absolute;
+  cursor: pointer;
+}
+
+main section.trending-slider div.slider-container button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+main section.trending-slider {
+  width: 100%;
+  margin-top: 95px;
+}
+
+main section.trending-slider h2 {
+  margin-top: 67px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+main section.trending-slider p {
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+main section.trending-slider p br {
+  display: none;
+}
+
+main section.trending-slider div#slider {
+  width: 87%;
+  margin: 53px 6.5% 182px 6.5%;
+}
+
+main section.trending-slider div#slider img {
+  width: 24.8vw;
+  max-width: 357px;
+}
+
+main section.trending-slider div.slider-container {
+  width: 87%;
+  margin: 53px 6.5% 182px 6.5%;
+}
+
+main section.trending-slider div.slider-container button {
+  width: 2.8vw;
+  height: 2.8vw;
+  max-width: 40px;
+  max-height: 40px;
+  font-size: 1.7vw;
+  line-height: 1.7vw;
+  top: calc(50% - 1.9vw);
+  z-index: 2;
+}
+
+main section.trending-slider div.slider-container button#slider-left-btn {
+  left: 0;
+}
+
+main section.trending-slider div.slider-container button#slider-right-btn {
+  right: 0;
+}
+
+main section.trending-slider div.slider-container div#slider {
+  width: 300%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -743,63 +814,30 @@ main section#trending-slider div[id="slider"] {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  margin: 0;
+  padding: 0;
+  margin-left: -100%;
+}
+
+main section.trending-slider div.slider-container div#slider div.slider-card-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 0 1.5%;
 }
 
-main section#trending-slider div[id="slider"] button {
-  cursor: pointer;
-}
-
-main section#trending-slider div[id="slider"] button:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-}
-
-main section#trending-slider {
-  width: 100%;
-  margin-top: 95px;
-}
-
-main section#trending-slider h2 {
-  margin-top: 67px;
-  font-size: 25px;
-  line-height: 30px;
-}
-
-main section#trending-slider p {
-  margin-top: 12px;
-  font-size: 18px;
-  line-height: 21px;
-}
-
-main section#trending-slider p br {
-  display: none;
-}
-
-main section#trending-slider div[id="slider"] {
-  width: 100%;
-  margin-bottom: 182px;
-  margin-top: 53px;
-  padding: 0 6.5%;
-}
-
-main section#trending-slider div[id="slider"] button {
-  width: 2.8vw;
-  height: 2.8vw;
-  max-width: 40px;
-  max-height: 40px;
-  font-size: 1.7vw;
-  line-height: 1.7vw;
-}
-
-main section#trending-slider div[id="slider"] img {
+main section.trending-slider div.slider-container div#slider div.slider-card-container div.card {
   width: 24.8vw;
-  max-width: 357px;
+  height: calc(24.8vw * 275 / 357);
 }
 
 @media (max-width: 430px) {
@@ -838,48 +876,48 @@ main section#trending-slider div[id="slider"] img {
   }
 }
 
-main section#trending-slider {
+main section.trending-slider {
   background-color: #F3F5F8;
 }
 
-main section#trending-slider h2 {
+main section.trending-slider h2 {
   color: #572EE5;
 }
 
-main section#trending-slider p {
+main section.trending-slider p {
   color: black;
 }
 
-main section#trending-slider div[id="slider"] button {
+main section.trending-slider div.slider-container button {
   background-color: transparent;
   border: #572EE5 1px solid;
   color: #572EE5;
 }
 
-main section#trending-slider div[id="slider"] button:hover {
+main section.trending-slider div.slider-container button:hover {
   background-color: #572EE5;
   color: white;
 }
 
-.dark main section#trending-slider {
+body.dark main section.trending-slider {
   background-color: #222326;
 }
 
-.dark main section#trending-slider h2 {
+body.dark main section.trending-slider h2 {
   color: white;
 }
 
-.dark main section#trending-slider p {
+body.dark main section.trending-slider p {
   color: white;
 }
 
-.dark main section#trending-slider div[id="slider"] button {
+body.dark main section.trending-slider div.slider-container button {
   background-color: transparent;
   border: white 1px solid;
   color: white;
 }
 
-.dark main section#trending-slider div[id="slider"] button:hover {
+body.dark main section.trending-slider div.slider-container button:hover {
   background-color: white;
   color: #222326;
 }
@@ -892,132 +930,16 @@ main section#container div#result-box {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  width: 100%;
-  padding: 0 10.8%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 main section#container div#result-box h2 {
-  width: 100%;
-  margin-top: 82px;
-  font-size: 35px;
-  line-height: 30px;
   font-family: 'Montserrat','sans-serif';
   font-weight: 700;
   text-align: center;
-  margin-bottom: 59px;
   color: #572EE5;
-}
-
-main section#container div#result-box div.card {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: calc(92.5% / 4);
-  height: calc(0.784 * 3 * 92.5vw / 16);
-  margin-bottom: calc(0.784 * 2.5vw);
-  overflow: hidden;
-}
-
-main section#container div#result-box div.card img {
-  position: relative;
-  z-index: -1;
-  width: 100%;
-  height: auto;
-}
-
-main section#container div#result-box div.card div.cover {
-  position: absolute;
-  width: 100%;
-  height: calc(0.784 * 3 * 92.5vw / 16);
-  background: rgba(87, 46, 229, 0.7);
-  z-index: 2;
-  display: none;
-}
-
-main section#container div#result-box div.card div.cover nav {
-  width: 100%;
-  padding-left: 50%;
-  height: 32px;
-  padding-right: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main section#container div#result-box div.card div.cover nav a {
-  text-decoration: none;
-  color: #572EE5;
-}
-
-main section#container div#result-box div.card div.cover nav button {
-  color: #572EE5;
-  width: 2.2vw;
-  height: 2.2vw;
-  max-height: 32px;
-  max-width: 32px;
-  background-color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  outline: none;
-  opacity: 0.7;
-  font-size: 1.3vw;
-  margin: 10px 0;
-}
-
-main section#container div#result-box div.card div.cover nav button:hover {
-  opacity: 1;
-}
-
-main section#container div#result-box div.card div.cover h4 {
-  color: white;
-  font-size: 15px;
-  font-family: 'Roboto','sans-serif';
-  font-weight: 400;
-  line-height: 18px;
-  width: 100%;
-  padding: 0 13px;
-  margin-top: 30%;
-  overflow: hidden;
-}
-
-main section#container div#result-box div.card div.cover a.title {
-  text-decoration: none;
-  outline: none;
-  width: 100%;
-  color: white;
-}
-
-main section#container div#result-box div.card div.cover a.title h3 {
-  padding: 0 13px;
-  font-size: 16px;
-  line-height: 19px;
-  margin-top: 5px;
-  font-family: 'Roboto','sans-serif';
-  font-weight: 700;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-main section#container div#result-box div.card:hover div.cover {
-  display: block;
 }
 
 main section#container div#result-box div#noResults {
@@ -1031,6 +953,211 @@ main section#container div#result-box div#noResults {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main section#container div#result-box {
+  width: 100%;
+  padding: 0 10.8%;
+}
+
+main section#container div#result-box h2 {
+  width: 100%;
+  margin-top: 82px;
+  font-size: 35px;
+  line-height: 30px;
+  margin-bottom: 59px;
+}
+
+main section#container div#result-box div.card {
+  width: calc(92.5% / 4);
+  height: calc(0.784 * 3 * 92.5vw / 16);
+  margin-bottom: calc(0.784 * 2.5vw);
+}
+
+main section#container div#result-box div#noResults {
+  width: 100%;
+}
+
+main section#container div#result-box div#noResults img {
+  margin-top: 7.57vw;
+  width: 150px;
+  height: 150px;
+}
+
+main section#container div#result-box h2 {
+  color: #572EE5;
+}
+
+main.dark section#container div#result-box h2 {
+  color: white;
+}
+
+div.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+div.card img {
+  position: relative;
+}
+
+div.card div.cover {
+  position: absolute;
+  display: none;
+}
+
+div.card div.cover nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.card div.cover nav a {
+  text-decoration: none;
+}
+
+div.card div.cover nav button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+div.card div.cover p {
+  font-family: 'Roboto','sans-serif';
+  position: absolute;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+div.card div.cover a.title {
+  text-decoration: none;
+  outline: none;
+  position: absolute;
+}
+
+div.card div.cover a.title p {
+  font-family: 'Roboto','sans-serif';
+  font-weight: 700;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+div.card:hover div.cover {
+  display: block;
+}
+
+div.card img {
+  width: 100%;
+  height: auto;
+}
+
+div.card div.cover {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+div.card div.cover nav {
+  width: 45%;
+  height: 32px;
+  right: 5%;
+  top: 0;
+  margin-top: 2%;
+  max-width: 100px;
+}
+
+div.card div.cover nav button {
+  width: 2.2vw;
+  height: 2.2vw;
+  max-height: 32px;
+  max-width: 32px;
+  font-size: 1.3vw;
+  margin: 10px 0;
+  border-radius: 3px;
+  z-index: unset;
+  top: unset;
+}
+
+div.card div.cover p {
+  top: 58%;
+  font-size: 15px;
+  line-height: 18px;
+  width: 100%;
+  padding: 0 13px;
+}
+
+div.card div.cover a.title {
+  width: 100%;
+  top: 70%;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+div.card div.cover a.title p {
+  padding: 0 13px;
+  margin-top: 5px;
+}
+
+div.card:hover div.cover {
+  display: block;
+}
+
+div.card div.cover {
+  background: rgba(87, 46, 229, 0.7);
+}
+
+div.card div.cover nav a {
+  color: #572EE5;
+}
+
+div.card div.cover nav button {
+  color: #572EE5;
+  background-color: white;
+  opacity: 0.7;
+}
+
+div.card div.cover nav button:hover {
+  color: #572EE5;
+  background-color: white;
+  opacity: 1;
+}
+
+body.dark div.card div.cover nav button {
+  color: #572EE5;
+  background-color: white;
+  opacity: 0.7;
+}
+
+body.dark div.card div.cover nav button:hover {
+  color: #572EE5;
+  background-color: white;
+  opacity: 1;
+}
+
+div.card div.cover p {
+  color: white;
+}
+
+div.card div.cover a.title {
+  color: white;
 }
 
 footer {

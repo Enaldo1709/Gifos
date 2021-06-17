@@ -31,11 +31,18 @@
 //Estilos del Slider
 @import "./slider/slider";
 @import "./slider/slider-responsive";
-@import "./slider/slider-claro";
-@import "./slider/slider-oscuro";
+@import "./slider/slider-tema";
+
+//Estilos de los resultados de la busqueda
+@import "./resultados/resultados";
+@import "./resultados/resultados-responsive";
+@import "./resultados/resultados-tema";
 
 //Estilos de las tarjetas
 @import "./tarjetas/tarjetas";
+@import "./tarjetas/tarjetas-responsive";
+@import "./tarjetas/tarjetas-tema";
+
 
 //Estilos del footer
 @import "./footer/footer";
