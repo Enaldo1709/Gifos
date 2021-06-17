@@ -1,66 +1,36 @@
-main{
-    section#container{
-        div#result-box{
-            display: flex; flex-flow: row wrap;
-            width: 100%; padding: 0 10.8%; justify-content: space-between;
-            h2{
-                width: 100%; margin-top: 82px; font-size: 35px; line-height: 30px;
-                font-family: 'Montserrat','sans-serif'; font-weight: 700; text-align: center;
-                margin-bottom: 59px; color: #572EE5;
-            }
-            div.card{
-                position: relative; display: flex; align-items: center;
-                width: calc(92.5% / 4); height: calc(0.784 * 3 * 92.5vw / 16);
-                margin-bottom: calc(0.784 * 2.5vw);  overflow: hidden;
+div.card{
+    position: relative; display: flex; 
+    align-items: center; overflow: hidden;
 
-                img{
-                    position: relative; z-index: -1;
-                    width: 100%; height: auto;
-                }
-                div.cover{
-                    position: absolute;
-                    width: 100%; height: calc(0.784 * 3 * 92.5vw / 16);
-                    background: rgba($color: #572ee5, $alpha: 0.7); z-index: 2; display: none;
-                    nav{
-                        width: 100%; padding-left: 50%; height: 32px; padding-right: 10px;
-                        display: flex; flex-flow: row wrap; justify-content: space-between;
-                        align-items: center;
-                        a{
-                            text-decoration: none; color: #572EE5;
-                        }
-                        button{
-                            color: #572EE5; width: 2.2vw; height: 2.2vw; max-height: 32px; max-width: 32px;
-                            background-color: white; border: none; border-radius: 6px; cursor: pointer;
-                            outline: none; opacity: 0.7; font-size: 1.3vw; margin: 10px 0;
-                        }
-                        button:hover{
-                            opacity: 1;
-                        }
-                    }
-                    h4{
-                        color: white; font-size: 15px; font-family: 'Roboto','sans-serif';
-                        font-weight: 400; line-height: 18px; width: 100%; padding: 0 13px;
-                        margin-top: 30%; overflow: hidden;
-                    }
-                    a.title{
-                        text-decoration: none; outline: none; width: 100%; color:white;
-                        h3{
-                            padding: 0 13px; font-size: 16px; line-height: 19px; margin-top: 5px;
-                            font-family: 'Roboto','sans-serif'; font-weight: 700; cursor: pointer;
-                            overflow: hidden;
-                        }
-                    }
-                }
+    img{
+        position: relative; 
+    }
+    div.cover{
+        position: absolute; display: none;
+        nav{
+            display: flex; flex-flow: row wrap; position: absolute;
+            justify-content: space-between; align-items: center;
+            a{
+                text-decoration: none; 
             }
-            div.card:hover div.cover{
-                display: block;
+            button{
+                border: none; cursor: pointer;
+                outline: none; position: relative;
             }
-
-            div#noResults{
-                display: flex; flex-flow: column wrap;
-                align-items: center; 
-                
+        }
+        p{
+            font-family: 'Roboto','sans-serif'; position: absolute;
+            font-weight: 400; overflow: hidden;
+        }
+        a.title{
+            text-decoration: none; outline: none; position: absolute;
+            p{
+                font-family: 'Roboto','sans-serif'; font-weight: 700; cursor: pointer;
+                overflow: hidden;
             }
         }
     }
+}
+div.card:hover div.cover{
+    display: block;
 }

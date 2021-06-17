@@ -15,8 +15,8 @@ export var parseGifos=(gifs)=>{
        <a href="${gif.image.url}" target="_blank" download="true"><button id="download"><i class="fas fa-download"></i></button></a>
        <button onclick="openFullScreen(${gif.id})"><i class="fas fa-expand-alt"></i></button>
    </nav>
-   <h4>${gif.user?gif.user:'User'}</h4>
-   <a href="${gif.url}" target="_blank" class="title"><h3>${gif.title?gif.title:'Title'}</h3></a>
+   <p>${gif.user?gif.user:'User'}</p>
+   <a href="${gif.url}" target="_blank" class="title"><p>${gif.title?gif.title:'Title'}</p></a>
 </div>
 </div>`;
    });
