@@ -1,5 +1,6 @@
-import { Tags } from "./modules/trendingTags.js";
-
+import { Tags } from "./trendingTags.js";
+import { changeTheme } from "./changeTheme.js";
+import { API } from "./APIFunctions.js";
 
 var homeHTML = `<h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h1>
 <img src="./assets/ilustra_header.svg" alt="GIFOS">
@@ -23,5 +24,13 @@ export var renderHomeStart = () =>{
 
     Tags.setTrendingTags();
     Tags.updateTrendingTags();
+
+    document.getElementById("link-modo-oscuro").addEventListener("click",changeTheme)
+    document.getElementById("link-modo-oscuro-mobile").addEventListener("click",changeTheme)
+    
+    document.querySelector("#menu-button").addEventListener("click",()=>{
+        document.querySelector("#menu").classList.toggle("noVisible");
+    })
+
     
 }

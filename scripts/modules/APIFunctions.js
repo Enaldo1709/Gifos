@@ -16,6 +16,7 @@ export var API={
      * @type{object}
      */
     endpoint:{
+        id:"gifs/",
         trending:"gifs/trending",
         search:"gifs/search",
         suggestions:"tags/related/",
@@ -41,31 +42,56 @@ export var API={
         .then(response => {
             //console.log(response);
             var gifs = []; var gif = {};
-            response.forEach(object => {
+            if(response.length>1){
+                response.forEach(object => {
+                    gif = {
+                        id:object.id,
+                        title:object.title,
+                        image:object.images.fixed_height_downsampled.webp?{
+                            url:object.images.fixed_height_downsampled.url,
+                            webp:object.images.fixed_height_downsampled.webp,
+                            default:object.images.fixed_height_downsampled.webp
+                        }:object.images.fixed_height_downsampled.url?{
+                            url:object.images.fixed_height_downsampled.url,
+                            default:object.images.fixed_height_downsampled.url
+                        }:object.images.original.webp?{
+                            url:object.images.original.url,
+                            webp:object.images.original.webp,
+                            default:object.images.original.webp
+                        }:{
+                            url:object.images.original.url,
+                            default:object.images.original.url
+                        },
+                        user:object.username,
+                        url:object.url
+                    };
+                    gifs.push(gif);
+                    
+                });
+            }else{
                 gif = {
                     id:response.id,
-                    title:object.title,
-                    image:object.images.fixed_height_downsampled.webp?{
-                        url:object.images.fixed_height_downsampled.url,
-                        webp:object.images.fixed_height_downsampled.webp,
-                        default:object.images.fixed_height_downsampled.webp
-                    }:object.images.fixed_height_downsampled.url?{
-                        url:object.images.fixed_height_downsampled.url,
-                        default:object.images.fixed_height_downsampled.url
-                    }:object.images.original.webp?{
-                        url:object.images.original.url,
-                        webp:object.images.original.webp,
-                        default:object.images.original.webp
+                    title:response.title,
+                    image:response.images.fixed_height_downsampled.webp?{
+                        url:response.images.fixed_height_downsampled.url,
+                        webp:response.images.fixed_height_downsampled.webp,
+                        default:response.images.fixed_height_downsampled.webp
+                    }:response.images.fixed_height_downsampled.url?{
+                        url:response.images.fixed_height_downsampled.url,
+                        default:response.images.fixed_height_downsampled.url
+                    }:response.images.original.webp?{
+                        url:response.images.original.url,
+                        webp:response.images.original.webp,
+                        default:response.images.original.webp
                     }:{
-                        url:object.images.original.url,
-                        default:object.images.original.url
+                        url:response.images.original.url,
+                        default:response.images.original.url
                     },
-                    user:object.username,
-                    url:object.url
+                    user:response.username,
+                    url:response.url
                 };
                 gifs.push(gif);
-                
-            });
+            }
             return gifs;
         })
         .catch(error => {console.error("Error en la respuesta del servidor: "+error.message+'\n'+error.stack);})
@@ -106,7 +132,7 @@ export var API={
          * @param{number: requested}
          * @return{string[]: tags}
         */
-        var url=API.API_URL+API.endpoint.suggestions+term+`?api_key=${API.API_KEY}`;
+        var url=`${API.API_URL}${API.endpoint.suggestions+term}?api_key=${API.API_KEY}`;
         var tags=fetch(url)
         .then(response => response.json())
         .then(response => response.data)
@@ -134,7 +160,8 @@ export var API={
          * @param{number: requested}
          * @return{string[]: tags}
         */
-        var url=API.API_URL+API.endpoint.trendingTopics+`?api_key=${API.API_KEY}`;
+
+        var url=`${API.API_URL}${API.endpoint.trendingTopics}?api_key=${API.API_KEY}`;
         var tags = fetch(url)
         .then(response => response.json())
         .then(response => response.data)
@@ -148,5 +175,15 @@ export var API={
         })
         .catch(error => {console.error("Error en la respuesta del servidor: "+error.message+'\n'+error.stack);})
         return tags;
+    },
+    getGifByID: async(id)=>{
+        /**
+         * Funcion que retorna el gif con el ID ingresado de la base de datos de la API.
+         * @param{string: id}
+         * @return{Object Gif: gif}
+        */
+        var url=`${API.API_URL}${API.endpoint.id}${id}?api_key=${API.API_KEY}`;
+        let gif = await API.pullGifos(url);
+        return gif[0];
     }
 }

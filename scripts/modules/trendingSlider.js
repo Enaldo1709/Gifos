@@ -1,5 +1,6 @@
 import { API } from "./APIFunctions.js";
 import { parseGifos } from "./parser.js";
+import { Favoritos } from "./favoritos.js";
 
 export var Slider = {
     gifs:[],
@@ -14,7 +15,7 @@ export var Slider = {
         const cards = document.querySelectorAll("div.slider-card-container");
         const Last = cards[cards.length-1];
         container.insertAdjacentElement("afterbegin",Last);
-        //setInterval(Slider.next,10000);
+        setInterval(Slider.next,10000);
 
         btnLeft.addEventListener("click",Slider.prev);
         btnRigth.addEventListener("click",Slider.next);
@@ -54,6 +55,11 @@ export var Slider = {
             card.classList.add("slider-card-container");
             card.innerHTML=parseGifos(gifSet);
             container.insertAdjacentElement("beforeend",card);
+        })
+        Slider.gifs.forEach(gif=>{
+            document.getElementById(`fav-btn-${gif.id}`).addEventListener("click",()=>{
+                Favoritos.addFavorito(gif.id);
+            });
         })
     }
 }

@@ -1,3 +1,5 @@
+import { API } from "./APIFunctions.js";
+
 export var Favoritos = {
     favoritosTemplate:`<div id="favoritos-container">
     <img src="../assets/icon-favoritos.svg" alt="Favoritos">
@@ -24,6 +26,19 @@ export var Favoritos = {
         Favoritos.gifs=localStorage.getItem("GIFOS_FAVORITOS")?JSON.parse(localStorage.getItem("GIFOS_FAVORITOS")):[];
     },
 
+    saveGifs: () =>{
+        localStorage.setItem("GIFOS_FAVORITOS",JSON.stringify(Favoritos.gifs));
+    },
+
+    addFavorito: async (id)=>{
+        const cardFavoritebButtonIcon = document.getElementById(`i${id}`);
+        cardFavoritebButtonIcon.classList.toggle("fas");
+        cardFavoritebButtonIcon.classList.toggle("far");
+        Favoritos.updateGifs();
+        var gif = await API.getGifByID(id);
+        Favoritos.gifs.push(gif);
+        Favoritos.saveGifs();
+    }
     
 
 }

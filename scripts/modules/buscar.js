@@ -15,6 +15,7 @@ export var buscar = async (offset,searchBox) =>{
     console.log(gifs.length,gifs);
     if(trendingBox.classList.contains("noVisible")) trendingBox.classList.add("noVisible");
     resultBox.innerHTML=title + ((gifs.length==0)?noResults:parseGifos(gifs));
+
     return gifs;
 }
 

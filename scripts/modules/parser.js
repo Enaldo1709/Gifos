@@ -11,8 +11,8 @@ export var parseGifos=(gifs)=>{
 <img src="${gif.image.default}">
 <div class="cover">
    <nav>
-       <button onclick="Favoritos.addFavorito('${gif.id}')" id="${gif.id}"><i id="i${gif.id}" class="${isFavorito(gif.id)?"fas":"far"} fa-heart"></i></button>
-       <a href="${gif.image.url}" target="_blank" download="true"><button id="download"><i class="fas fa-download"></i></button></a>
+       <button id="fav-btn-${gif.id}"><i id="i${gif.id}" class="${isFavorito(gif.id)?"fas":"far"} fa-heart"></i></button>
+       <a href="i.giphy.com/media/${gif.id}/giphy.webp" download="${gif.title}.gif" target="_blank"><button id="download"><i class="fas fa-download"></i></button></a>
        <button onclick="openFullScreen(${gif.id})"><i class="fas fa-expand-alt"></i></button>
    </nav>
    <p>${gif.user?gif.user:'User'}</p>
