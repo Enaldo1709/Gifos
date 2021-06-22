@@ -1,4 +1,4 @@
-import { isFavorito } from "./isFavorito.js";
+import { Favoritos } from "./favoritos.js";
 export var parseGifos=(gifs)=>{
     /**
     * Funcion que formatea los gif en formato de las tarjetas HTML
@@ -11,7 +11,7 @@ export var parseGifos=(gifs)=>{
 <img src="${gif.image.default}">
 <div class="cover">
    <nav>
-       <button id="fav-btn-${gif.id}"><i id="i${gif.id}" class="${isFavorito(gif.id)?"fas":"far"} fa-heart"></i></button>
+       <button id="fav-btn-${gif.id}"><i id="i${gif.id}" class="${Favoritos.isFavorito(gif.id)?"fas":"far"} fa-heart"></i></button>
        <a href="i.giphy.com/media/${gif.id}/giphy.webp" download="${gif.title}.gif" target="_blank"><button id="download"><i class="fas fa-download"></i></button></a>
        <button onclick="openFullScreen(${gif.id})"><i class="fas fa-expand-alt"></i></button>
    </nav>

@@ -10,7 +10,7 @@ export var Tags ={
     updateTrendingTags : () => {
         setInterval(() => {
             Tags.setTrendingTags();
-        }, 60000);
+        }, 10000);
     }
 
 }

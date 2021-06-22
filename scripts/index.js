@@ -20,14 +20,8 @@ document.addEventListener("DOMContentLoaded",()=>{
     
     searchBox.addEventListener("submit",(e)=>{
         e.preventDefault();
-        gifs = buscar(offset,searchBox);
-        if (gifs.length>0){
-            gifs.forEach(gif=>{
-                document.getElementById(`fav-btn-${gif.id}`).addEventListener("click",()=>{
-                    Favoritos.addFavorito(gif.id);
-                });
-            })
-        }
+        buscar(offset,searchBox);
+        
     })
     
 })

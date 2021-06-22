@@ -9,7 +9,6 @@ export var Slider = {
         const btnLeft = document.querySelector("button#slider-left-btn");
         const btnRigth = document.querySelector("button#slider-right-btn");
         Slider.gifs=await API.getTrendingGifos(9,0);
-        console.log(btnLeft);
 
         Slider.render();
         const cards = document.querySelectorAll("div.slider-card-container");

@@ -29,16 +29,34 @@ export var Favoritos = {
     saveGifs: () =>{
         localStorage.setItem("GIFOS_FAVORITOS",JSON.stringify(Favoritos.gifs));
     },
+    
+    isFavorito: (id)=>{
+        var favorito = false;
+        Favoritos.updateGifs();
+        Favoritos.gifs.forEach(gif=> favorito=(gif.id===id)?true:favorito);
+        return favorito;
+    },
 
     addFavorito: async (id)=>{
         const cardFavoritebButtonIcon = document.getElementById(`i${id}`);
         cardFavoritebButtonIcon.classList.toggle("fas");
         cardFavoritebButtonIcon.classList.toggle("far");
         Favoritos.updateGifs();
-        var gif = await API.getGifByID(id);
-        Favoritos.gifs.push(gif);
-        Favoritos.saveGifs();
+        if(Favoritos.isFavorito(id)){
+            let index=0;
+            Favoritos.gifs.forEach(gif => {
+                if(gif.id === id) {
+                    index=Favoritos.gifs.indexOf(gif);
+                }
+            });
+            Favoritos.gifs.splice(index,1);
+            Favoritos.saveGifs();
+        }else{
+            var gif = await API.getGifByID(id);
+            Favoritos.gifs.push(gif);
+            Favoritos.saveGifs();
+        }
     }
-    
-
 }
+
+
