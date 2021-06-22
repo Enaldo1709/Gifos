@@ -19,6 +19,9 @@ main{
 
         div.trending-topics{
             display: flex; flex-flow: column wrap; align-items: center;
+            &.noVisible{
+                display: none;
+            }
             h2{
                 font-weight: 700; font-family: 'Montserrat','sans-serif';
             }

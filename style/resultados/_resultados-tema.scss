@@ -5,6 +5,21 @@ main{
                  color: #572EE5;
                 
             }
+            div.ver-mas-container{
+                background-color: transparent;
+                button#ver-mas-btn{
+                    background-color: white; 
+                    border: #572EE5 solid 1px; color: #572EE5;
+                    &:hover{
+                        transform: scale(1.02);
+                        background-color: #572EE5;
+                        color: white;
+                    }
+                    &:active{
+                        transform: scale(0.98);
+                    }
+                }
+            }
         }
     }
     &.dark{
@@ -12,6 +27,21 @@ main{
             div#result-box{
                 h2{
                     color: white;
+                }
+                div.ver-mas-container{
+                    background-color: transparent;
+                    button#ver-mas-btn{
+                        background-color: transparent; 
+                        border: white solid 1px; color: white;
+                        &:hover{
+                            transform: scale(1.02);
+                            background-color: white;
+                            color: black;
+                        }
+                        &:active{
+                            transform: scale(0.98);
+                        }
+                    }
                 }
             }
         }           

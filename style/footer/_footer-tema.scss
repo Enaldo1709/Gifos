@@ -1,0 +1,37 @@
+footer{
+    background-color: white; border-bottom: 5px solid #572EE5;
+
+    p{
+        color: black;
+    }
+    nav{
+        ul{
+            li{
+                a{
+                    color: #CDD6E0;
+                }
+                a:hover{
+                    color: #572EE5;
+                }
+            }
+        }
+    }
+    body.dark &{
+        background-color: #37383C; border-bottom: 5px solid black;    
+        p{
+            color: white;
+        }
+        nav{
+            ul{
+                li{
+                    a{
+                        color: #CDD6E0;
+                    }
+                    a:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

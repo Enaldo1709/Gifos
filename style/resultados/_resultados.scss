@@ -12,6 +12,15 @@ main{
                 align-items: center; 
                 
             }
+
+            div.ver-mas-container{
+                display: flex; flex-flow: row wrap;
+                justify-content: center;
+                button#ver-mas-btn{
+                    cursor: pointer; font-weight: 700;
+                    font-family: 'Montserrat','sans-serif';
+                }
+            }
         }
     }
 }

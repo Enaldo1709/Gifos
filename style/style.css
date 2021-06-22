@@ -231,6 +231,42 @@ header button[id="menu-button"] {
   color: #572EE5;
 }
 
+body.dark header {
+  background-color: #37383C;
+  border-top: black 5px solid;
+}
+
+body.dark header ul li {
+  color: white;
+}
+
+body.dark header ul li a {
+  color: white;
+}
+
+body.dark header ul li:hover {
+  border-bottom: 2px solid #5ED7C6;
+}
+
+body.dark header ul button {
+  border: white 1px solid;
+  color: white;
+}
+
+body.dark header ul button:hover {
+  background-color: white;
+  color: black;
+}
+
+body.dark header ul button:active {
+  background-color: #9CAFC3;
+  color: white;
+}
+
+body.dark header button[id="menu-button"] {
+  color: white;
+}
+
 div[id="menu"] {
   background: rgba(87, 46, 229, 0.9);
 }
@@ -253,61 +289,25 @@ div[id="menu"] button:active {
   background-color: #572EE5;
 }
 
-.dark header {
-  background-color: #37383C;
-  border-top: black 5px solid;
-}
-
-.dark header ul li {
-  color: white;
-}
-
-.dark header ul li a {
-  color: white;
-}
-
-.dark header ul li:hover {
-  border-bottom: 2px solid #5ED7C6;
-}
-
-.dark header ul button {
-  border: white 1px solid;
-  color: white;
-}
-
-.dark header ul button:hover {
-  background-color: white;
-  color: black;
-}
-
-.dark header ul button:active {
-  background-color: #9CAFC3;
-  color: white;
-}
-
-.dark header button[id="menu-button"] {
-  color: white;
-}
-
-.dark div[id="menu"] {
+body.dark div[id="menu"] {
   background: black;
 }
 
-.dark div[id="menu"] ul li {
+body.dark div[id="menu"] ul li {
   color: white;
 }
 
-.dark div[id="menu"] ul li a {
+body.dark div[id="menu"] ul li a {
   color: white;
 }
 
-.dark div[id="menu"] button {
+body.dark div[id="menu"] button {
   border: white 1px solid;
   color: white;
   background-color: transparent;
 }
 
-.dark div[id="menu"] button:active {
+body.dark div[id="menu"] button:active {
   background-color: #9CAFC3;
   color: white;
 }
@@ -382,6 +382,10 @@ main section#container.home div.trending-topics {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main section#container.home div.trending-topics.noVisible {
+  display: none;
 }
 
 main section#container.home div.trending-topics h2 {
@@ -516,33 +520,33 @@ main section#container div.trending-topics p {
   color: #572EE5;
 }
 
-.dark main section#container h1 {
+body.dark main section#container h1 {
   color: white;
 }
 
-.dark main section#container h1 span {
+body.dark main section#container h1 span {
   color: #50E3C2;
 }
 
-.dark main section#container form input[type="search"] {
+body.dark main section#container form input[type="search"] {
   border: 1px solid white;
   background-color: transparent;
   border-right: none;
   color: white;
 }
 
-.dark main section#container form button {
+body.dark main section#container form button {
   border: 1px solid white;
   border-left: none;
   background-color: transparent;
   color: white;
 }
 
-.dark main section#container div.trending-topics h2 {
+body.dark main section#container div.trending-topics h2 {
   color: white;
 }
 
-.dark main section#container div.trending-topics p {
+body.dark main section#container div.trending-topics p {
   color: white;
 }
 
@@ -704,11 +708,11 @@ section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empt
   color: #50E3C2;
 }
 
-.dark section#container.favoritos h2 {
+body.dark section#container.favoritos h2 {
   color: white;
 }
 
-.dark section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
+body.dark section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
   color: white;
 }
 
@@ -955,6 +959,25 @@ main section#container div#result-box div#noResults {
           align-items: center;
 }
 
+main section#container div#result-box div.ver-mas-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section#container div#result-box div.ver-mas-container button#ver-mas-btn {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'Montserrat','sans-serif';
+}
+
 main section#container div#result-box {
   width: 100%;
   padding: 0 10.8%;
@@ -984,12 +1007,68 @@ main section#container div#result-box div#noResults img {
   height: 150px;
 }
 
+main section#container div#result-box div.ver-mas-container {
+  width: 100%;
+}
+
+main section#container div#result-box div.ver-mas-container button#ver-mas-btn {
+  width: 127px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
 main section#container div#result-box h2 {
   color: #572EE5;
 }
 
+main section#container div#result-box div.ver-mas-container {
+  background-color: transparent;
+}
+
+main section#container div#result-box div.ver-mas-container button#ver-mas-btn {
+  background-color: white;
+  border: #572EE5 solid 1px;
+  color: #572EE5;
+}
+
+main section#container div#result-box div.ver-mas-container button#ver-mas-btn:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background-color: #572EE5;
+  color: white;
+}
+
+main section#container div#result-box div.ver-mas-container button#ver-mas-btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
 main.dark section#container div#result-box h2 {
   color: white;
+}
+
+main.dark section#container div#result-box div.ver-mas-container {
+  background-color: transparent;
+}
+
+main.dark section#container div#result-box div.ver-mas-container button#ver-mas-btn {
+  background-color: transparent;
+  border: white solid 1px;
+  color: white;
+}
+
+main.dark section#container div#result-box div.ver-mas-container button#ver-mas-btn:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background-color: white;
+  color: black;
+}
+
+main.dark section#container div#result-box div.ver-mas-container button#ver-mas-btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 div.card {
@@ -1289,20 +1368,20 @@ footer nav ul li a:hover {
   color: #572EE5;
 }
 
-.dark footer {
+body.dark footer {
   background-color: #37383C;
   border-bottom: 5px solid black;
 }
 
-.dark footer p {
+body.dark footer p {
   color: white;
 }
 
-.dark footer nav ul li a {
+body.dark footer nav ul li a {
   color: #CDD6E0;
 }
 
-.dark footer nav ul li a:hover {
+body.dark footer nav ul li a:hover {
   color: white;
 }
 /*# sourceMappingURL=style.css.map */

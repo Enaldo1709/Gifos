@@ -19,6 +19,15 @@ main{
                 }
                 
             }
+
+            div.ver-mas-container{
+                width: 100%; 
+                button#ver-mas-btn{
+                    width: 127px; height: 50px; border-radius: 25px;
+                    font-size: 13px; line-height: 16px;
+
+                }
+            }
         }
     }
 }

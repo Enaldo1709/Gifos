@@ -7,20 +7,17 @@
 //Estilos del header
 @import "./header/header";
 @import "./header/header-responsive";
-@import "./header/header-claro";
-@import "./header/header-oscuro";
+@import "./header/header-tema";
 
 //Estilos del homepage
 @import "./home/home";
 @import "./home/home-responsive";
-@import "./home/home-claro";
-@import "./home/home-oscuro";
+@import "./home/home-tema";
 
 //Estilos de la página de favoritos
 @import "./favoritos/favoritos";
 @import "./favoritos/favoritos-responsive";
-@import "./favoritos/favoritos-claro";
-@import "./favoritos/favoritos-oscuro";
+@import "./favoritos/favoritos-tema";
 
 //Estilos de la página de mis gifos
 @import "./misGifos/misGifos";
@@ -47,5 +44,4 @@
 //Estilos del footer
 @import "./footer/footer";
 @import "./footer/footer-responsive";
-@import "./footer/footer-claro";
-@import "./footer/footer-oscuro";
+@import "./footer/footer-tema";
