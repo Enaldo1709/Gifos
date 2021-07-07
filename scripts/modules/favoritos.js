@@ -1,25 +1,54 @@
 import { API } from "./APIFunctions.js";
+import {parseGifos} from "./parser.js";
+import { Tags } from "./trendingTags.js";
 
 export var Favoritos = {
-    favoritosTemplate:`<div id="favoritos-container">
-    <img src="../assets/icon-favoritos.svg" alt="Favoritos">
+    favoritosTemplate:`<div class="favoritos-container">
+    <img src="../assets/icon-favoritos.svg" alt="Favoritos" class="favoritos-icon">
     <h2>Favoritos</h2>
 </div>
 <div id="result-box"></div>`,
 
-    emptyTemplate:`<div id="favoritos-empty-container">
-    <img src="../assets/icon-fav-sin-contenido.svg" alt="Favoritos">
+    emptyTemplate:`<div class="favoritos-empty-container">
+    <img src="../assets/icon-fav-sin-contenido.svg" alt="Favoritos" class="favoritos-icon-empty">
     <p>"¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!"</p>
 </div>`,
 
     gifs:localStorage.getItem("GIFOS_FAVORITOS")?JSON.parse(localStorage.getItem("GIFOS_FAVORITOS")):[],
 
-    container:document.getElementById("container"),
+    initService: ()=>{
+        document.getElementById("link-favoritos").addEventListener("click",()=>{
+            Tags.stopService();
+            Favoritos.favoritosRenderTemplate();
+        });
+
+        document.getElementById("link-favoritos-mobile").addEventListener("click",()=>{
+            Tags.stopService()
+            Favoritos.favoritosRenderTemplate();
+        });
+
+    },
 
     favoritosRenderTemplate:()=>{
-        Favoritos.container.classList=[];
-        Favoritos.container.classList.add("favoritos");
-        Favoritos.container.innerHTML=homeHTML;
+        const container = document.getElementById("container");
+        container.classList=[];
+        container.classList.add("favoritos");
+        var verMasBtn = `<div class="ver-mas-container"><button id="ver-mas-btn">VER MÁS</button></div>`;
+
+        Favoritos.updateGifs();
+        container.innerHTML=Favoritos.favoritosTemplate;
+        const resultBox = document.getElementById("result-box");
+
+        if (Favoritos.gifs.length){
+            
+            console.log(resultBox);
+            console.log(Favoritos.gifs);
+            resultBox.innerHTML = `${parseGifos(Favoritos.gifs)}${(Favoritos.gifs.length>12)?verMasBtn:""}`;
+
+        }else{
+            resultBox.innerHTML=Favoritos.emptyTemplate;
+        }
+        
     },
 
     updateGifs:()=>{

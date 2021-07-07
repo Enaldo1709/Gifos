@@ -7,9 +7,20 @@ export var Tags ={
         var topics = await API.getTrendingTags();
         tags.innerText=topics;
     },
+    startService:()=> {
+        Tags.running=true;
+        Tags.setTrendingTags();
+        Tags.updateTrendingTags();
+    },
+    stopService:()=>{
+        Tags.running=false;
+    },
+
     updateTrendingTags : () => {
         setInterval(() => {
-            Tags.setTrendingTags();
+            if (Tags.running){
+                Tags.setTrendingTags();
+            }
         }, 10000);
     }
 

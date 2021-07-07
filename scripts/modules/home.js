@@ -22,7 +22,7 @@ export var renderHomeStart = () =>{
     container.classList.add("home");
     container.innerHTML=homeHTML;
 
-    Tags.setTrendingTags();
+    Tags.startService();
     Tags.updateTrendingTags();
 
     document.getElementById("link-modo-oscuro").addEventListener("click",changeTheme)

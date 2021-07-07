@@ -558,58 +558,68 @@ section#container.favoritos {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
-section#container.favoritos img {
-  margin-top: 11px;
-  width: 28px;
-}
-
-section#container.favoritos h2 {
-  font-family: 'Montserrat','sans-serif';
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
-  margin-top: 8px;
-  color: #572EE5;
-}
-
-section#container.favoritos div[id="favoritos-container"] {
-  background-color: transparent;
+section#container.favoritos div.favoritos-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 36px;
+}
+
+section#container.favoritos div.favoritos-container img.favoritos-icon {
+  width: 28px;
+  height: 21px;
+}
+
+section#container.favoritos div.favoritos-container h2 {
+  font-family: 'Montserrat','sans-serif';
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #572EE5;
+  font-weight: 700;
+}
+
+section#container.favoritos div#result-box div.favoritos-empty-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  padding: 0 10.8%;
+  margin-bottom: 36px;
 }
 
-section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] {
-  background-color: transparent;
-}
-
-section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] img {
+section#container.favoritos div#result-box div.favoritos-empty-container img.favoritos-icon-empty {
   width: 150px;
   height: 150px;
   margin-top: 109.3px;
 }
 
-section#container.favoritos div[id="favoritos-container"] div[id="favoritos-empty-container"] p {
+section#container.favoritos div#result-box div.favoritos-empty-container p {
   font-family: 'Montserrat','sans-serif';
-  font-weight: 700;
-  text-align: center;
   font-size: 22px;
   line-height: 33px;
-  margin-top: 23.7px;
-  width: 35%;
-  max-width: 431px;
-  margin-bottom: 137px;
+  text-align: center;
   color: #50E3C2;
+  margin-bottom: 137px;
 }
 
 section#container.favoritos img {

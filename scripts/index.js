@@ -1,6 +1,7 @@
 import { buscar } from "./modules/buscar.js";
 import {renderHomeStart} from "./modules/home.js";
 import { Slider } from "./modules/trendingSlider.js";
+import {Favoritos} from "./modules/favoritos.js";
 
 
 document.addEventListener("DOMContentLoaded",()=>{
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     
 
     renderHomeStart();
+    Favoritos.initService();
     var searchBox = document.getElementById("search-form");
     var offset =0;
 
